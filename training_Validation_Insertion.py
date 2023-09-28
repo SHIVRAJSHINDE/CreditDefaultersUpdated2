@@ -1,9 +1,7 @@
-from datetime import datetime
 import sys
-from Source.DataValidationAndIngestion.rawDataValidation import Raw_Data_validation
-''''from Training_Raw_data_validation.rawValidation import Raw_Data_validation
-from DataTypeValidation_Insertion_Training.DataTypeValidation import dBOperation
-from DataTransform_Training.DataTransformation import dataTransform'''
+from Source.dataValidation.rawDataValidation import Raw_Data_validation
+
+from Source.dataIngestionAndSplitting.dataIngestionAndSplitting import dBOperation
 
 from ExceptionLoggerAndUtils.exception import CustomException
 from ExceptionLoggerAndUtils.logger import App_Logger
@@ -13,7 +11,7 @@ import os
 class train_validation:
     def __init__(self,path):
         self.raw_data = Raw_Data_validation(path)
-
+        self.dbOperation = dBOperation()
 
         self.cwd=os.getcwd()
         self.file_object = open(self.cwd+'Training_Main_Log.txt', 'a+')
@@ -32,10 +30,44 @@ class train_validation:
             # validating filename of prediction files
             self.raw_data.validationFileNameRaw(regex, LengthOfDateStampInFile, LengthOfTimeStampInFile)
 
+            # validating column length in the file
+            self.raw_data.validateColumnLength(noofcolumns)
+            # validating if any column has all values missing
+            self.raw_data.validateMissingValuesInWholeColumn()
+            self.log_writer.log(self.file_object, "Raw Data Validation Complete!!")
 
-            '''            # validating column length in the file
-                        self.raw_data.validateColumnLength(noofcolumns)
-            '''
+            self.log_writer.log(self.file_object, "Starting Data Transforamtion!!")
+            # replacing blanks in the csv file with "Null" values to insert in table
+            self.raw_data.replaceMissingWithNull()
+            self.log_writer.log(self.file_object, "DataTransformation Completed!!!")
+
+            self.log_writer.log(self.file_object,"Creating Training_Database and tables on the basis of given schema!!!")
+            # create database with given name, if present open the connection! Create table with columns given in schema
+            self.dbOperation.createTableDb('Training', column_names)
+            self.log_writer.log(self.file_object, "Table creation Completed!!")
+
+
+            self.log_writer.log(self.file_object, "Insertion of Data into Table started!!!!")
+            # insert csv files in the table
+            self.dbOperation.insertIntoTableGoodData('Training')
+            self.log_writer.log(self.file_object, "Insertion in Table completed!!!")
+
+
+            self.log_writer.log(self.file_object, "Deleting Good Data Folder!!!")
+            # Delete the good data folder after loading files in table
+            self.raw_data.deleteExistingGoodDataTrainingFolder()
+            self.log_writer.log(self.file_object, "Good_Data folder deleted!!!")
+
+
+            self.log_writer.log(self.file_object, "Moving bad files to Archive and deleting Bad_Data folder!!!")
+            # Move the bad files to archive folder
+            self.raw_data.moveBadFilesToArchiveBad()
+            self.log_writer.log(self.file_object, "Bad files moved to archive!! Bad folder Deleted!!")
+            self.log_writer.log(self.file_object, "Validation Operation completed!!")
+
+
+            self.file_object.close()
+
 
 
         except Exception as e:

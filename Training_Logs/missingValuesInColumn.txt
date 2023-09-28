@@ -16,3 +16,39 @@
 2023-09-24/16:28:04		Missing Values Validation Started!!
 2023-09-24/16:28:36		Missing Values Validation Started!!
 2023-09-25/16:20:07		Missing Values Validation Started!!
+2023-09-28/15:11:42		Missing Values Validation Started!!
+2023-09-28/15:11:42		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:12:24		Missing Values Validation Started!!
+2023-09-28/16:12:24		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:17:42		Missing Values Validation Started!!
+2023-09-28/16:17:42		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:19:50		Missing Values Validation Started!!
+2023-09-28/16:19:50		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:25:32		Missing Values Validation Started!!
+2023-09-28/16:25:33		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:27:56		Missing Values Validation Started!!
+2023-09-28/16:27:56		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:38:36		Missing Values Validation Started!!
+2023-09-28/16:38:36		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:43:08		Missing Values Validation Started!!
+2023-09-28/16:43:08		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:47:02		Missing Values Validation Started!!
+2023-09-28/16:47:02		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:49:05		Missing Values Validation Started!!
+2023-09-28/16:49:05		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:50:26		Missing Values Validation Started!!
+2023-09-28/16:50:26		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:54:04		Missing Values Validation Started!!
+2023-09-28/16:54:04		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:56:02		Missing Values Validation Started!!
+2023-09-28/16:56:02		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:56:39		Missing Values Validation Started!!
+2023-09-28/16:56:39		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:57:36		Missing Values Validation Started!!
+2023-09-28/16:57:36		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:59:15		Missing Values Validation Started!!
+2023-09-28/16:59:15		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:59:53		Missing Values Validation Started!!
+2023-09-28/16:59:53		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/17:02:12		Missing Values Validation Started!!
+2023-09-28/17:02:12		Invalid Column for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011960_120212.csv

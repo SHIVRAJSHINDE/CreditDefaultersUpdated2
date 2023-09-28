@@ -267,3 +267,111 @@
 2023-09-28/14:48:00		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
 2023-09-28/14:48:00		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
 2023-09-28/14:48:00		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/14:57:51		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/14:57:51		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/14:57:51		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/14:59:23		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/14:59:23		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/14:59:23		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/15:00:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/15:00:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/15:00:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/15:00:06		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/15:00:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/15:00:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/15:00:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/15:00:26		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/15:00:41		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/15:00:41		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/15:00:41		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/15:00:41		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/15:11:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/15:11:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/15:11:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/15:11:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/15:11:42		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:12:24		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:12:24		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:12:24		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:12:24		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:12:24		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:17:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:17:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:17:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:17:42		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:17:42		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:19:50		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:19:50		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:19:50		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:19:50		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:19:50		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:25:32		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:25:32		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:25:32		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:25:32		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:25:32		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:27:56		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:27:56		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:27:56		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:27:56		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:27:56		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:38:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:38:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:38:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:38:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:38:36		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:43:08		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:43:08		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:43:08		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:43:08		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:43:08		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:47:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:47:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:47:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:47:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:47:02		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:49:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:49:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:49:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:49:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:49:05		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:50:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:50:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:50:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:50:26		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:50:26		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:54:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:54:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:54:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:54:04		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:54:04		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:56:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:56:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:56:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:56:02		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:56:02		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:56:39		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:56:39		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:56:39		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:56:39		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:56:39		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:57:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:57:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:57:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:57:36		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:57:36		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:59:15		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:59:15		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:59:15		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:59:15		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:59:15		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/16:59:53		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/16:59:53		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/16:59:53		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/16:59:53		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/16:59:53		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb
+2023-09-28/17:02:12		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2023-09-28/17:02:12		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120212.csv
+2023-09-28/17:02:12		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120213.csv
+2023-09-28/17:02:12		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011961_120211.csv
+2023-09-28/17:02:12		Invalid File Name!! File moved to Bad Raw Folder :: file_seperator.ipynb

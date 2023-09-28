@@ -714,3 +714,4 @@
 2023-09-26/19:16:18		Entered the save_model method of the File_Operation class
 2023-09-26/19:16:18		Model File XGBoost2 saved. Exited the save_model method of the Model_Finder class
 2023-09-26/19:16:18		Successful End of Training
+2023-09-28/17:16:32		Extracting csv file from table
