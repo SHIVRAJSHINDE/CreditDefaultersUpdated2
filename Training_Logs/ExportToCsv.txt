@@ -22,3 +22,9 @@
 2023-09-28/17:00:02		File exporting failed. Error : [Errno 13] Permission denied: 'Training_FileFromDB/InputFile.csv'
 2023-09-28/17:02:20		File exporting failed. Error : [Errno 13] Permission denied: 'Training_FileFromDB/InputFile.csv'
 2023-09-28/17:16:33		File exporting failed. Error : [Errno 13] Permission denied: 'Training_FileFromDB/InputFile.csv'
+2023-09-29/15:36:08		File exported successfully!!!
+2023-09-30/12:23:34		File exported successfully!!!
+2023-09-30/12:26:03		File exported successfully!!!
+2023-09-30/12:30:08		File exported successfully!!!
+2023-09-30/12:33:17		File exported successfully!!!
+2023-09-30/12:33:28		File exported successfully!!!

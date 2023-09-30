@@ -209,13 +209,14 @@ class dBOperation:
             self.logger.log(log_file, "File exporting failed. Error : %s" %e)
             log_file.close()
 
-    def dataSplittingToTrainAndTest(self):
+    def createInputAndOutputDataset(self):
         df = pd.read_csv("Training_FileFromDB/InputFile.csv")
         X = df.iloc[:,:-1]
         y = df['default payment next month']
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 42)
+        return (X,y)
+
+    def dataSplittingToTrainAndTest(self,X,y):
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 355)
 
         return (X_train, X_test, y_train, y_test)
-
-        pass
 
