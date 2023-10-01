@@ -4,13 +4,9 @@ from xgboost import XGBClassifier
 from sklearn.metrics  import roc_auc_score,accuracy_score
 
 class Model_Finder:
+    """ Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+        Description : This class shall  be used to find the model with best accuracy and AUC score.
     """
-                This class shall  be used to find the model with best accuracy and AUC score.
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
-
-                """
 
     def __init__(self,file_object,logger_object):
         self.file_object = file_object
@@ -19,18 +15,14 @@ class Model_Finder:
         self.xgb = XGBClassifier(objective='binary:logistic',n_jobs=-1)
 
     def get_best_params_for_naive_bayes(self,train_x,train_y):
+        """ Method Name : get_best_params_for_naive_bayes
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description : get the parameters for the Naive Bayes's Algorithm which give the best accuracy.
+                          Use Hyper Parameter Tuning.
+            Output      : The model with the best parameters
+            On Failure  : Raise Exception
         """
-        Method Name: get_best_params_for_naive_bayes
-        Description: get the parameters for the Naive Bayes's Algorithm which give the best accuracy.
-                     Use Hyper Parameter Tuning.
-        Output: The model with the best parameters
-        On Failure: Raise Exception
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
-
-                        """
         self.logger_object.log(self.file_object, 'Entered the get_best_params_for_naive_bayes method of the Model_Finder class')
         try:
             # initializing with different combination of parameters
@@ -43,7 +35,6 @@ class Model_Finder:
 
             #extracting the best parameters
             self.var_smoothing = self.grid.best_params_['var_smoothing']
-
 
             #creating a new model with the best parameters
             self.gnb = GaussianNB(var_smoothing=self.var_smoothing)
@@ -63,16 +54,11 @@ class Model_Finder:
 
     def get_best_params_for_xgboost(self,train_x,train_y):
 
-        """
-        Method Name: get_best_params_for_xgboost
-        Description: get the parameters for XGBoost Algorithm which give the best accuracy.
-                     Use Hyper Parameter Tuning.
-        Output: The model with the best parameters
-        On Failure: Raise Exception
-
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
+        """ Method Name : get_best_params_for_xgboost
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description : get the parameters for XGBoost Algorithm which give the best accuracy.Use Hyper Parameter Tuning.
+            Output      : The model with the best parameters
+            On Failure  : Raise Exception
         """
 
         self.logger_object.log(self.file_object,'Entered the get_best_params_for_xgboost method of the Model_Finder class')
@@ -85,7 +71,8 @@ class Model_Finder:
                 }
 
             # Creating an object of the Grid Search class
-            self.grid= GridSearchCV(XGBClassifier(objective='binary:logistic'),self.param_grid_xgboost, verbose=3,cv=2,n_jobs=-1)
+            self.grid= GridSearchCV(XGBClassifier(objective='binary:logistic'),
+                                    self.param_grid_xgboost, verbose=3,cv=2,n_jobs=-1)
             # finding the best parameters
             self.grid.fit(train_x, train_y)
 
@@ -114,17 +101,13 @@ class Model_Finder:
 
 
     def get_best_model(self,train_x,train_y,test_x,test_y):
+        """ Method Name : get_best_model
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description : Find out the Model which has the best AUC score.
+            Output      : The best model name and the model object
+            On Failure  : Raise Exception
         """
-        Method Name: get_best_model
-        Description: Find out the Model which has the best AUC score.
-        Output: The best model name and the model object
-        On Failure: Raise Exception
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
-
-        """
         self.logger_object.log(self.file_object,'Entered the get_best_model method of the Model_Finder class')
         # create best model for XGBoost
         try:
