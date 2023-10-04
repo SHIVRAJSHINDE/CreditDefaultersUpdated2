@@ -1,8 +1,6 @@
 import sys
 from Source.dataValidation.rawDataValidation import Raw_Data_validation
-
 from Source.dataIngestionAndSplitting.dataIngestionAndSplitting import dBOperation
-
 from ExceptionLoggerAndUtils.exception import CustomException
 from ExceptionLoggerAndUtils.logger import App_Logger
 

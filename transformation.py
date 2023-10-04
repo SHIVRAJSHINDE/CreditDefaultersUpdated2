@@ -2,8 +2,6 @@
 Here we start data pre processing and then Clustering.
 Written By: Shivraj Shinde//Version: 1.0//Revisions: None
 """
-
-
 # Doing the necessary imports
 from sklearn.model_selection import train_test_split
 
@@ -18,12 +16,12 @@ from Source.Training import tuner
 from Source.dataIngestionAndSplitting.dataIngestionAndSplitting import dBOperation
 from Source.Transformation import preprocessing
 from ExceptionLoggerAndUtils import file_methods
-
+from ExceptionLoggerAndUtils.utils import save_object
 from ExceptionLoggerAndUtils.exception import CustomException
 from ExceptionLoggerAndUtils.logger import App_Logger
 import numpy as np
 import pandas as pd
-
+import os
 #Creating the common Logging object
 class classTransformation:
     def __init__(self):
@@ -34,6 +32,9 @@ class classTransformation:
         self.log_writer = App_Logger()
         self.preprocessor = preprocessing.Preprocessor(self.file_object, self.log_writer)
         self.model_finder = tuner.Model_Finder(self.file_object, self.log_writer)  # object initialization
+        self.preprocessor_obj_file_path = os.path.join('models', "proprocessor.pkl")
+
+
 
     def methodTransformation(self):
         self.log_writer.log(self.file_object, "Extracting csv file from table")
@@ -65,9 +66,9 @@ class classTransformation:
             '''train_x = self.preprocessor.scale_numerical_columns(X_train)
             test_x = self.preprocessor.scale_numerical_columns(X_test)
             '''
-            pipe = self.transformation.methodPreprocessing()
-            train_x = pipe.fit_transform(X_train)
-            test_x = pipe.transform(X_test)
+            self.pipe = self.transformation.methodPreprocessing()
+            train_x = self.pipe.fit_transform(X_train)
+            test_x = self.pipe.transform(X_test)
 
             model_finder=tuner.Model_Finder(self.file_object,self.log_writer) # object initialization
 
@@ -80,9 +81,16 @@ class classTransformation:
             file_op = file_methods.File_Operation(self.file_object,self.log_writer)
             save_model=file_op.save_model(best_model,best_model_name+str(i))
 
+        save_object(
+            file_path=self.preprocessor_obj_file_path,
+            obj = self.pipe
+        )
+
         # logging the successful Training
         self.log_writer.log(self.file_object, 'Successful End of Training')
         self.file_object.close()
+
+
 
 
         '''print(y_train)

@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .container {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <form action="{{ url_for('predict_datapoint')}}" method="post" class="container">
+            <h1><legend>Student Exam Performance Prediction</legend></h1>
+
+
+                 <input type="file" name="csv_file">
+                <input type="submit" value="Upload">
+
+                   <div class="form-group">
+                        <label for="file">Select a CSV file:</label>
+                        <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+
+
+                    <h2>
+                        The prediction is {{result}}
+                    </h2>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
