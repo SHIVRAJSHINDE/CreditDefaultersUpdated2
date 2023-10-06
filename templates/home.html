@@ -1,45 +1,84 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Student Exam Performance Indicator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Upload CSV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
         body {
-            background-color: lightblue;
+            background-color: #f0f8ff; /* Light blue background color */
         }
 
-        .container {
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 600px;
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
+        .upload-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            text-align: center;
+        }
+
+        .file-input-label {
+            border: 2px solid #87CEEB;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .file-path {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .upload-button {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-
-    <div class="login">
-        <form action="{{ url_for('predict_datapoint')}}" method="post" class="container">
-            <h1><legend>Student Exam Performance Prediction</legend></h1>
-
-
-                 <input type="file" name="csv_file">
-                <input type="submit" value="Upload">
-
-                   <div class="form-group">
-                        <label for="file">Select a CSV file:</label>
-                        <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Upload</button>
-
-
-                    <h2>
-                        The prediction is {{result}}
-                    </h2>
-        </form>
+    <div class="container upload-container">
+        <div class="upload-box">
+            <h1 class="text-center mb-4">Upload CSV File</h1>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file-input" class="file-input-label">
+                        <span>Choose a file</span>
+                        <input type="file" name="csv_file" accept=".csv" class="d-none" id="file-input">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Upload" class="btn btn-primary btn-lg upload-button">
+                </div>
+                <div class="form-group">
+                    <div class="file-path" id="file-path"></div>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- JavaScript to display selected file path -->
+    <script>
+        const fileInput = document.getElementById('file-input');
+        const filePath = document.getElementById('file-path');
 
+        fileInput.addEventListener('change', () => {
+            const fileName = fileInput.files[0].name;
+            filePath.textContent = `Selected File: ${fileName}`;
+        });
+    </script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -17,22 +17,33 @@ def predict_datapoint():
     if request.method=='GET':
         return render_template('home.html')
     else:
-        if "csv_file" not in request.files:
-            return "No file part"
-        csv_file = request.files["csv_file"]
-        # Check if the file has a name
-        if csv_file.filename == "":
-            return "No selected file"
-        # Check if the file is a CSV file
-        if not csv_file.filename.endswith(".csv"):
-            return "File is not a CSV"
-        # Read the content of the CSV file
-        csv_content = csv_file.read()
-        # You can process the CSV data here (e.g., parse and display)
-        return render_template("home.html")
-        #return f"File '{csv_file.filename}' uploaded successfully."
+        if 'csv_file' not in request.files:
+            return render_template('index.html', message="No file selected.")
 
+        file = request.files['csv_file']
 
+        # Check if the file has a valid name and extension
+        if file.filename == '':
+            return render_template('index.html', message="No file selected.")
+        if not file.filename.endswith('.csv'):
+            return render_template('index.html', message="Invalid file format. Please upload a CSV file.")
+
+        try:
+            # Read the CSV file into a pandas DataFrame
+            df = pd.read_csv(file)
+            print(df)
+            pred = PredictPipeline()
+            clusters ,finalPred = pred.predit(df)
+            print(clusters ,finalPred)
+
+            # You can now work with the DataFrame as needed
+            # For example, you can convert it to HTML and pass it to a template
+            table_html = df.to_html(classes='table table-bordered table-hover')
+
+            # Render an HTML template with the table
+            return render_template('index.html', table=table_html)
+        except Exception as e:
+            return render_template('index.html', message=f"An error occurred: {str(e)}")
 
 
 if __name__ == "__main__":

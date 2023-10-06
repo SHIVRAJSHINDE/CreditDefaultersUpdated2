@@ -13,9 +13,7 @@ from ExceptionLoggerAndUtils.logger import App_Logger
 
 class Raw_Data_validation:
     """ This class shall be used for handling all the validation done on the Raw Training Data!!.
-        Written By: Shivraj Shinde
-        Version: 1.0
-        Revisions: None
+        Written By: Shivraj Shinde//Version: 1.0//Revisions: None
     """
 
     def __init__(self,path):
@@ -24,15 +22,12 @@ class Raw_Data_validation:
         self.schema_path = 'Schemas/schema_training.json'
         self.logger = App_Logger()
 
-
     def valuesFromSchema(self):
-        """Method Name: valuesFromSchema
-            Description: This method extracts all the relevant information from the pre-defined "Schema" file.
-            Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
-            On Failure: Raise Exception
-            Written By: Shivraj Shinde
-            Version: 1.0
-            Revisions: None
+        """ Method Name : valuesFromSchema
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description : This method extracts all the relevant information from the pre-defined "Schema" file.
+            Output      : LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
+            On Failure  : Raise Exception
             """
         try:
             with open(self.schema_path, 'r') as f:
@@ -60,15 +55,12 @@ class Raw_Data_validation:
 
 
     def manualRegexCreation(self):
-        """Method Name: manualRegexCreation
-            Description: This method contains a manually defined regex based on the "FileName" given in "Schema" file.
-            This Regex is used to validate the filename of the training data.
-            Output: Regex pattern
-            On Failure: None
-
-            Written By: Shivraj Shinde
-            Version: 1.0
-            Revisions: None
+        """ Method Name :manualRegexCreation
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description :This method contains a manually defined regex based on the "FileName" given in "Schema" file.
+                            This Regex is used to validate the filename of the training data.
+            Output      :Regex pattern
+            On Failure  :None
             """
         # sample file name: "creditCardFraud_021119920_010222.csv"
 
@@ -77,18 +69,14 @@ class Raw_Data_validation:
 
 
     def validationFileNameRaw(self,regex,LengthOfDateStampInFile,LengthOfTimeStampInFile):
-        """
-            Method Name: validationFileNameRaw
-            Description: This function validates the name of the training csv files as per given name in the schema!
+        """ Method Name : validationFileNameRaw
+            Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+            Description : This function validates the name of the training csv files as per given name in the schema!
                          Regex pattern is used to do the validation.If name format do not match the file is moved
                          to Bad Raw Data folder else in Good raw data.
-            Output: None
-            On Failure: Exception
-
-            Written By: Shivraj Shinde
-            Version: 1.0
-            Revisions: None
-                """
+            Output      : None
+            On Failure  : Exception
+            """
 
 
         # delete the directories for good and bad data in case last run was unsuccessful and folders were not deleted.
@@ -127,16 +115,12 @@ class Raw_Data_validation:
             raise CustomException(e,sys)
 
     def deleteExistingBadDataTrainingFolder(self):
+        """     Method Name : deleteExistingBadDataTrainingFolder
+                Written By  : Shivraj Shinde//Version: 1.0//Revisions: None
+                Description : This method deletes the directory made to store the bad Data.
+                Output      : None
+                On Failure  : Error
         """
-        Method Name: deleteExistingBadDataTrainingFolder
-        Description: This method deletes the directory made to store the bad Data.
-        Output: None
-        On Failure: Error
-
-        Written By: Shivraj Shinde
-        Version: 1.0
-        Revisions: None
-            """
 
         try:
             path = 'RawAndValidatedData/ValidatedData/'

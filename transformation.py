@@ -10,6 +10,7 @@ from data_preprocessing import preprocessing
 from data_preprocessing import clustering
 from best_model_finder import tuner
 from file_operations import file_methods'''
+
 from Source.Transformation.dataTransformation import classePreprocessing
 from Source.Transformation.clustering import KMeansClustering
 from Source.Training import tuner
@@ -63,10 +64,8 @@ class classTransformation:
             cluster_label = cluster_data['Labels']
             X_train, X_test, y_train, y_test = self.dbOperation.dataSplittingToTrainAndTest(X=cluster_features,y=cluster_label)
 
-            '''train_x = self.preprocessor.scale_numerical_columns(X_train)
-            test_x = self.preprocessor.scale_numerical_columns(X_test)
-            '''
             self.pipe = self.transformation.methodPreprocessing()
+
             train_x = self.pipe.fit_transform(X_train)
             test_x = self.pipe.transform(X_test)
 
@@ -89,13 +88,6 @@ class classTransformation:
         # logging the successful Training
         self.log_writer.log(self.file_object, 'Successful End of Training')
         self.file_object.close()
-
-
-
-
-        '''print(y_train)
-        print(y_test)'''
-
 
 
 if __name__ == "__main__":
